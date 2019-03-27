@@ -72,7 +72,7 @@ class RelativeToAbsoluteUrl
      *    URLs, or empty string if the base URL is not absolute or if either
      *    URL cannot be parsed.
      */
-    public static function urlToAbsolute(string $baseUrl, string $relativeUrl): string
+    public static function urlToAbsolute($baseUrl, $relativeUrl)
     {
         // If relative URL has a scheme, clean path and return.
         $r = self::splitUrl($relativeUrl);
